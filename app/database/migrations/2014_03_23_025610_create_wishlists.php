@@ -17,9 +17,9 @@ class CreateWishlists extends Migration {
 	    {
 	        $table->increments('id');
 	        $table->string('MUid');
-	        $table->string('customer');
-	        $table->string('courseID');
-	        $table->string('time');
+	        $table->string('customer')->nullable();
+	        $table->string('courseID')->nullable();
+	        $table->string('time')->nullable();
 	        $table->timestamps();
 	    });
 	}

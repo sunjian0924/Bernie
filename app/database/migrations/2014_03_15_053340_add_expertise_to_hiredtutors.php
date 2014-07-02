@@ -15,7 +15,7 @@ class AddExpertiseToHiredtutors extends Migration {
 		//
 		Schema::table('hiredtutors', function($table)
         {
-            $table->string('expertise');
+            $table->string('expertise')->nullable();
         });
 	}
 

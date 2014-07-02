@@ -15,7 +15,7 @@ class AddRememberTokenToUsers extends Migration {
 		//
 		Schema::table('users', function($table)
         {
-            $table->string('remember_token');
+            $table->string('remember_token')->nullable();
         });
 	}
 

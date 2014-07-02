@@ -15,7 +15,7 @@ class AddCustomerToTutors extends Migration {
 		//
 		Schema::table('tutors', function($table)
         {
-            $table->string('customer');
+            $table->string('customer')->nullable();
         });
 	}
 
